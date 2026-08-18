@@ -1,0 +1,22 @@
+# --- Secrets: never commit ---
+.env
+**/.env
+
+# --- Python environments / caches ---
+.venv/
+**/.venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# --- OS cruft ---
+.DS_Store
+**/.DS_Store
+
+# --- agent-exercise: generated/runtime artifacts (regenerable) ---
+# listings.db is rebuilt with `python make_listings.py`; agent.log is runtime output.
+agent-exercise/listings.db
+agent-exercise/agent.log
+
+# NOTE: incident-exercise/incident.db and incident_fixed.db are intentionally
+# committed (provided snapshot + demonstrated fix) and must NOT be ignored.
